@@ -1,4 +1,4 @@
-import { telegramBot } from '../telegram/TelegramBot.js'
+import { telegramBot } from '../telegram/telegramBot.js'
 
 const chatId = '-4104691003'
 
