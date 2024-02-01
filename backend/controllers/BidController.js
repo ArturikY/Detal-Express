@@ -1,4 +1,6 @@
-import { PrismaClient } from '@prisma/client'
+import pkg from '@prisma/client'
+const { PrismaClient } = pkg
+
 import { sendMessage } from '../utils/sendMessage.js'
 
 const prisma = new PrismaClient()
