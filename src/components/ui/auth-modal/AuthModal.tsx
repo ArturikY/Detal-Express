@@ -56,21 +56,7 @@ export const AuthModal: FC = () => {
 						</Text>
 					</ModalHeader>
 					<ModalCloseButton onClick={() => context?.setIsAuthOpen(false)} />
-					{status === 'login' ? (
-						<LoginForm
-							openAuth={context?.isAuthOpen ? context?.isAuthOpen : test}
-							setOpenAuth={
-								context?.setIsAuthOpen ? context?.setIsAuthOpen : setTest
-							}
-						/>
-					) : (
-						<RegisterForm
-							openAuth={context?.isAuthOpen ? context?.isAuthOpen : test}
-							setOpenAuth={
-								context?.setIsAuthOpen ? context?.setIsAuthOpen : setTest
-							}
-						/>
-					)}
+					{status === 'login' ? <LoginForm /> : <RegisterForm />}
 				</ModalContent>
 			</Modal>
 		</div>
